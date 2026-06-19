@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+*.o
+*.a
+*.hex
+*.elf
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local Claude Code settings
+.claude/settings.local.json

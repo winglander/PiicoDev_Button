@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For PiicoDevButton
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PiicoDevButton	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+isPressed	KEYWORD2
+wasPressed	KEYWORD2
+isConnected	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+PIICODEV_BUTTON_DEFAULT_ADDR	LITERAL1
