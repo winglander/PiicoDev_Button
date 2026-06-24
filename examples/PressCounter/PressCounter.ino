@@ -4,9 +4,9 @@
 */
 
 #include <Wire.h>
-#include <PiicoDevButton.h>
+#include <PiicoDev_Button.h>
 
-PiicoDevButton button;   // default address 0x42, on Wire
+PiicoDev_Button button;   // default address 0x42, on Wire
 
 uint16_t pressCount = 0;
 

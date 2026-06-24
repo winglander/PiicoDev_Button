@@ -1,5 +1,5 @@
 /*
-  PiicoDevButton.h - Minimal Arduino library for the Core Electronics PiicoDev Button
+  PiicoDev_Button.h - Minimal Arduino library for the Core Electronics PiicoDev Button
   Tested on Arduino UNO R4 with a button at default address 0x42.
 
   Register map (confirmed on hardware):
@@ -15,11 +15,11 @@
 
 #define PIICODEV_BUTTON_DEFAULT_ADDR 0x42
 
-class PiicoDevButton {
+class PiicoDev_Button {
   public:
     // Pass a custom address if you've changed the ID switches, and/or a
     // different TwoWire bus (e.g. &Wire1).
-    PiicoDevButton(uint8_t address = PIICODEV_BUTTON_DEFAULT_ADDR, TwoWire *bus = &Wire);
+    PiicoDev_Button(uint8_t address = PIICODEV_BUTTON_DEFAULT_ADDR, TwoWire *bus = &Wire);
 
     // Call once in setup(). Does NOT call Wire.begin() for you, so you stay
     // in control of bus init. Returns true if the device acknowledges.

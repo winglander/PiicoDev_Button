@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring Map For PiicoDevButton
+# Syntax Coloring Map For PiicoDev_Button
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-PiicoDevButton	KEYWORD1
+PiicoDev_Button	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)

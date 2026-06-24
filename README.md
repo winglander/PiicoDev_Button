@@ -1,4 +1,4 @@
-# PiicoDevButton (Arduino)
+# PiicoDev_Button (Arduino)
 
 Minimal Arduino library for the [Core Electronics PiicoDev® Button](https://core-electronics.com.au/piicodev-button.html), communicating over I2C.
 
@@ -8,7 +8,7 @@ Tested on an Arduino UNO R4 with the button at its default address `0x42`.
 
 ## Installation
 
-**Arduino IDE — Library Manager** (once accepted into the index): *Tools → Manage Libraries…*, search for `PiicoDevButton`.
+**Arduino IDE — Library Manager** (once accepted into the index): *Tools → Manage Libraries…*, search for `PiicoDev_Button`.
 
 **Manual / .ZIP:** download this repo as a ZIP and use *Sketch → Include Library → Add .ZIP Library…*, or clone it into your `Arduino/libraries` folder.
 
@@ -20,9 +20,9 @@ Connect the PiicoDev Button to your board's I2C bus (SDA/SCL) and power. The lib
 
 ```cpp
 #include <Wire.h>
-#include <PiicoDevButton.h>
+#include <PiicoDev_Button.h>
 
-PiicoDevButton button;   // default address 0x42, on Wire
+PiicoDev_Button button;   // default address 0x42, on Wire
 
 void setup() {
   Serial.begin(115200);
@@ -46,7 +46,7 @@ See [`examples/PressCounter`](examples/PressCounter/PressCounter.ino) for a comp
 
 | Method | Description |
 | --- | --- |
-| `PiicoDevButton(address = 0x42, bus = &Wire)` | Construct with an optional I2C address and `TwoWire` bus (e.g. `&Wire1`). |
+| `PiicoDev_Button(address = 0x42, bus = &Wire)` | Construct with an optional I2C address and `TwoWire` bus (e.g. `&Wire1`). |
 | `bool begin()` | Returns `true` if the device acknowledges on the bus. Call once in `setup()`. |
 | `bool isPressed()` | `true` while the button is held down right now. |
 | `bool wasPressed()` | `true` if pressed since the last call. Auto-clears, so each press is reported once. |
