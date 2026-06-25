@@ -18,8 +18,8 @@
 class PiicoDev_Button {
   public:
     // Pass a custom address if you've changed the ID switches, and/or a
-    // different TwoWire bus (e.g. &Wire1).
-    PiicoDev_Button(uint8_t address = PIICODEV_BUTTON_DEFAULT_ADDR, TwoWire *bus = &Wire);
+    // different TwoWire bus (e.g. Wire1).
+    PiicoDev_Button(uint8_t address = PIICODEV_BUTTON_DEFAULT_ADDR, TwoWire &wire = Wire);
 
     // Call once in setup(). Does NOT call Wire.begin() for you, so you stay
     // in control of bus init. Returns true if the device acknowledges.

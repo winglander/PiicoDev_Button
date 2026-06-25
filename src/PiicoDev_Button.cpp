@@ -3,9 +3,9 @@
 #define REG_IS_PRESSED  0x11   // active-low: 1 = released, 0 = pressed
 #define REG_WAS_PRESSED 0x12   // latch: 1 if pressed since last read, clears on read
 
-PiicoDev_Button::PiicoDev_Button(uint8_t address, TwoWire *bus) {
+PiicoDev_Button::PiicoDev_Button(uint8_t address, TwoWire &wire) {
   _addr = address;
-  _wire = bus;
+  _wire = &wire;
 }
 
 bool PiicoDev_Button::begin() {

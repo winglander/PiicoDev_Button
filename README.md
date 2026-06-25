@@ -46,7 +46,7 @@ See [`examples/PressCounter`](examples/PressCounter/PressCounter.ino) for a comp
 
 | Method | Description |
 | --- | --- |
-| `PiicoDev_Button(address = 0x42, bus = &Wire)` | Construct with an optional I2C address and `TwoWire` bus (e.g. `&Wire1`). |
+| `PiicoDev_Button(address = 0x42, wire = Wire)` | Construct with an optional I2C address and `TwoWire` bus (e.g. `Wire1`). |
 | `bool begin()` | Returns `true` if the device acknowledges on the bus. Call once in `setup()`. |
 | `bool isPressed()` | `true` while the button is held down right now. |
 | `bool wasPressed()` | `true` if pressed since the last call. Auto-clears, so each press is reported once. |
