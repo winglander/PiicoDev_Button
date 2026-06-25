@@ -64,3 +64,7 @@ Confirmed on hardware:
 ## License
 
 [MIT](LICENSE)
+
+## Attribution
+
+"PiicoDev" and the PiicoDev logo are trademarks of Core Electronics Pty Ltd.
